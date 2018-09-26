@@ -23,12 +23,12 @@ bot.on('start', function() {
     
 
     
-    // define channel, where bot exist. You can adjust it there https://my.slack.com/services 
-    //bot.postMessageToChannel('support_onelove', params);
-    bot.on('message', function(data) {
-        // all ingoing events https://api.slack.com/rtm
-        console.log(data);
-    });
+    // define channel, here bot exist. You can adjust it there https://my.slack.com/services 
+    // bot.postMessageToChannel('support_onelove', params);
+    // bot.on('message', function(data) {
+    //     // all ingoing events https://api.slack.com/rtm
+    //     console.log(data);
+    // });
 //bot.on('error', (err) => console.log(err));
 
 // bot.on('message', (data) => {
