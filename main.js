@@ -48,56 +48,56 @@ bot.on('start', function() {
     var temptext = data.text ? data.text.toLowerCase() :'';
     if(temptext.includes('env') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('support', `${[...ENVIROMENT]}`,{
+        bot.postMessageToChannel('4test', `${[...ENVIROMENT]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
     }
     if(temptext.includes('elmath') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('support', `${[...ELEM_MATH]}`,{
+        bot.postMessageToChannel('4test', `${[...ELEM_MATH]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
     }
     if(temptext.includes('midmath') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('support', `${[...MID_MATH]}`,{
+        bot.postMessageToChannel('4test', `${[...MID_MATH]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
     }
     if(temptext.includes('highmath') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('support', `${[...HIGH_MATH]}`,{
+        bot.postMessageToChannel('4test', `${[...HIGH_MATH]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
     }
     if(temptext.includes('native') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('support', `${[...NATIVE]}`,{
+        bot.postMessageToChannel('4test', `${[...NATIVE]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
     }
     if(temptext.includes('eng') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('support', `${[...ENGLISH]}`,{
+        bot.postMessageToChannel('4test', `${[...ENGLISH]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
     }
     if(temptext.includes('uchi') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('support', `${[...uchi]}`,{
+        bot.postMessageToChannel('4test', `${[...uchi]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
     }
     if(temptext.includes('help') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('support', `${[...help]}`,{
+        bot.postMessageToChannel('4test', `${[...help]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
