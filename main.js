@@ -15,32 +15,32 @@ var bot = new SlackBot({
     name: 'QaBot'
 });
 
-bot.on('start', function() {
-    // more information about additional params https://api.slack.com/methods/chat.postMessage
-    var params = {
-       // icon_emoji: 
-    };
+// bot.on('start', function() {
+//     // more information about additional params https://api.slack.com/methods/chat.postMessage
+//     var params = {
+//        // icon_emoji: 
+//     };
     
 
     
-    // define channel, here bot exist. You can adjust it there https://my.slack.com/services 
-    // bot.postMessageToChannel('support_onelove', params);
-    // bot.on('message', function(data) {
-    //     // all ingoing events https://api.slack.com/rtm
-    //     console.log(data);
-    // });
-//bot.on('error', (err) => console.log(err));
+//     // define channel, here bot exist. You can adjust it there https://my.slack.com/services 
+//     // bot.postMessageToChannel('support_onelove', params);
+//     // bot.on('message', function(data) {
+//     //     // all ingoing events https://api.slack.com/rtm
+//     //     console.log(data);
+//     // });
+// //bot.on('error', (err) => console.log(err));
 
-// bot.on('message', (data) => {
-//     if(data.type != 'message'){
-//         return;
-//     }
-//     handleMessage(data.text);
-// })
-// function handleMessage(message) {
-//     if (message.includes ('QA'))
-//   QA();
- })
+// // bot.on('message', (data) => {
+// //     if(data.type != 'message'){
+// //         return;
+// //     }
+// //     handleMessage(data.text);
+// // })
+// // function handleMessage(message) {
+// //     if (message.includes ('QA'))
+// //   QA();
+//  })
 
  bot.on('message', function(data) {
      
