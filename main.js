@@ -11,7 +11,7 @@ const help = ['env - Окружающий мир', '\nnative - Русский я
 const channel = '4test';
 // create a bot
 var bot = new SlackBot({
-    token: 'xoxb-2187949909-443799451110-ikGUDzj1GtvA1U37VO91JENx', // Add a bot https://my.slack.com/services/new/bot and put the token 
+    token: 'xoxb-429903089909-434388194016-jnwIBKRv7QfkYL4SGHdwNjgH', // Add a bot https://my.slack.com/services/new/bot and put the token 
     name: 'QaBot'
 });
 
