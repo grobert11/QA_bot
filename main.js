@@ -8,10 +8,10 @@ const NATIVE = ['<@U9SR492FP>', '<@U6SEBE1U2>'];
 const ENGLISH = ['<@U8XMJBC74>', '<@U9WL2QW6L>'];
 const uchi  = ['<@U6UHL6Z5F>', '<@U7NCLDEJ3>',];
 const help = ['env - Окружающий мир', '\nnative - Русский язык', '\nelmath - Математика начальная школа', '\nmidmath - Математика основная школа','\nhighmath - Математика старшая школа', '\neng - Английский язык', '\nuchi - Учи.ру/Олимпиады']
-const channel = '4test';
+const channel = 'support';
 // create a bot
 var bot = new SlackBot({
-    token: 'xoxb-429903089909-434388194016-jnwIBKRv7QfkYL4SGHdwNjgH', // Add a bot https://my.slack.com/services/new/bot and put the token 
+    token: 'xoxb-2187949909-443799451110-ikGUDzj1GtvA1U37VO91JENx', // Add a bot https://my.slack.com/services/new/bot and put the token 
     name: 'QaBot'
 });
 
@@ -48,56 +48,56 @@ bot.on('start', function() {
     var temptext = data.text ? data.text.toLowerCase() :'';
     if(temptext.includes('env') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('support_onelove', `${[...ENVIROMENT]}`,{
+        bot.postMessageToChannel(channel, `${[...ENVIROMENT]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
     }
     if(temptext.includes('elmath') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('channel', `${[...ELEM_MATH]}`,{
+        bot.postMessageToChannel(channel, `${[...ELEM_MATH]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
     }
     if(temptext.includes('midmath') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('channel', `${[...MID_MATH]}`,{
+        bot.postMessageToChannel(channel, `${[...MID_MATH]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
     }
     if(temptext.includes('highmath') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('channel', `${[...HIGH_MATH]}`,{
+        bot.postMessageToChannel(channel, `${[...HIGH_MATH]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
     }
     if(temptext.includes('native') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('channel', `${[...NATIVE]}`,{
+        bot.postMessageToChannel(channel, `${[...NATIVE]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
     }
     if(temptext.includes('eng') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('channel', `${[...ENGLISH]}`,{
+        bot.postMessageToChannel(channel, `${[...ENGLISH]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
     }
     if(temptext.includes('uchi') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('channel', `${[...uchi]}`,{
+        bot.postMessageToChannel(channel, `${[...uchi]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
     }
     if(temptext.includes('help') && temptext.indexOf('[qa]')==0){
         console.log(data);
-        bot.postMessageToChannel('channel', `${[...help]}`,{
+        bot.postMessageToChannel(channel, `${[...help]}`,{
             thread_ts: data.ts,
             // user: data.user
         }); 
