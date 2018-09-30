@@ -6,6 +6,10 @@
   "scripts": {
     "start": "node main.js"
   },
+  "engines": {
+    "node": "5.0.0",
+    "npm": "4.6.1"
+    },
   "author": "Robert",
   "license": "MIT",
   "dependencies": {

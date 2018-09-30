@@ -11,10 +11,9 @@ const uchi  = ['<@U6UHL6Z5F>', '<@U7NCLDEJ3>',];
 const help = ['env - Окружающий мир', '\nnative - Русский язык', '\nelmath - Математика начальная школа', '\nmidmath - Математика основная школа','\nhighmath - Математика старшая школа', '\neng - Английский язык', '\nuchi - Учи.ру/Олимпиады']
 const channel = 'support';
 
-let server_port = process.env.YOUR_PORT || process.env.PORT || 80;
-let server_host = process.env.YOUR_HOST || '0.0.0.0';
-server.listen(server_port, server_host, function() {
-    console.log('Listening on port %d', server_port);
+const port = process.env.PORT || 3000;
+app.listen(port, "0.0.0.0", function() {
+console.log("Listening on Port 3000");
 });
 
 // create a bot
