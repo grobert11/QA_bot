@@ -11,11 +11,7 @@ const uchi  = ['<@U6UHL6Z5F>', '<@U7NCLDEJ3>',];
 const help = ['envi - Окружающий мир', '\nnative - Русский язык', '\nelmath - Математика начальная школа', '\nmidmath - Математика основная школа','\nhighmath - Математика старшая школа', '\neng - Английский язык', '\nuchi - Учи.ру/Олимпиады']
 const channel = 'support';
 
-fastify.listen(process.env.PORT || 3000, function (err) {
-    if (err) throw err
-    console.log(`server listening on ${fastify.server.address().port}`)
-  });
-
+http.createServer(onRequest).listen(process.env.PORT || 6000)
 // create a bot
 var bot = new SlackBot({
     token:'xoxb-429903089909-434388194016-jnwIBKRv7QfkYL4SGHdwNjgH', //banana
