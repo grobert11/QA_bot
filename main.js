@@ -27,11 +27,12 @@ require('http').createServer().listen(process.env.PORT || 5000).on('request', fu
 //   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
 
-// create a bot
+// create a bot on  //banana
 let bot = new SlackBot({
-    token:'xoxb-429903089909-434388194016-jnwIBKRv7QfkYL4SGHdwNjgH', //banana
-    //token: 'xoxb-2187949909-443799451110-ikGUDzj1GtvA1U37VO91JENx', //uchi.ru
+    token:'xoxb-429903089909-434388194016-jnwIBKRv7QfkYL4SGHdwNjgH'
 });
+    //token: 'xoxb-2187949909-443799451110-ikGUDzj1GtvA1U37VO91JENx', //uchi.ru
+
 
 // bot.on('start', function() {
 //     // more information about additional params https://api.slack.com/methods/chat.postMessage
