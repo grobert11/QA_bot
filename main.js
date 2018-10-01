@@ -11,6 +11,10 @@ const uchi  = ['<@U6UHL6Z5F>', '<@U7NCLDEJ3>',];
 const help = ['envi - Окружающий мир', '\nnative - Русский язык', '\nelmath - Математика начальная школа', '\nmidmath - Математика основная школа','\nhighmath - Математика старшая школа', '\neng - Английский язык', '\nuchi - Учи.ру/Олимпиады'];
 const channel = 'support';
 
+require('http').createServer().listen(process.env.PORT || 5000).on('request', function(req, res){
+    res.end('')
+});
+
 // const express = require('express');
 // const path = require('path');
 // const PORT = process.env.PORT || 5000;
