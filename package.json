@@ -1,12 +1,14 @@
 {
-  "name": "qa_bot",
+  "name": "slack_bot",
   "version": "1.0.0",
   "description": "Slack bot",
   "main": "main.js",
   "scripts": {
     "start": "node main.js"
   },
-  
+  "engines": {
+    "node": "v10.11.0"
+  },
   "author": "Robert",
   "license": "MIT",
   "dependencies": {

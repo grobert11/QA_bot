@@ -1,5 +1,5 @@
 
-var SlackBot = require('slackbots');
+let SlackBot = require('slackbots');
 
 const enviroment = ['<@U9RDPFXQ9>', '<@U8CFZ96AF>'];
 const elem_math = ['<@U7KSADK47>', '<@UA3DKCPUM>'];
@@ -8,7 +8,7 @@ const high_math = ['<@U9VSETB5W>', '<@UAP7DLTA9>'];
 const native = ['<@U9SR492FP>', '<@U6SEBE1U2>'];
 const english = ['<@U8XMJBC74>', '<@U9WL2QW6L>'];
 const uchi  = ['<@U6UHL6Z5F>', '<@U7NCLDEJ3>',];
-const help = ['envi - Окружающий мир', '\nnative - Русский язык', '\nelmath - Математика начальная школа', '\nmidmath - Математика основная школа','\nhighmath - Математика старшая школа', '\neng - Английский язык', '\nuchi - Учи.ру/Олимпиады']
+const help = ['envi - Окружающий мир', '\nnative - Русский язык', '\nelmath - Математика начальная школа', '\nmidmath - Математика основная школа','\nhighmath - Математика старшая школа', '\neng - Английский язык', '\nuchi - Учи.ру/Олимпиады'];
 const channel = 'support';
 
 // const express = require('express');
@@ -24,7 +24,7 @@ const channel = 'support';
 
 
 // create a bot
-var bot = new SlackBot({
+let bot = new SlackBot({
     token:'xoxb-429903089909-434388194016-jnwIBKRv7QfkYL4SGHdwNjgH', //banana
     //token: 'xoxb-2187949909-443799451110-ikGUDzj1GtvA1U37VO91JENx', //uchi.ru
 });
