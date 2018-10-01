@@ -8,13 +8,18 @@ const high_math = ['<@U9VSETB5W>', '<@UAP7DLTA9>'];
 const native = ['<@U9SR492FP>', '<@U6SEBE1U2>'];
 const english = ['<@U8XMJBC74>', '<@U9WL2QW6L>'];
 const uchi  = ['<@U6UHL6Z5F>', '<@U7NCLDEJ3>',];
-const help = ['envi - Окружающий мир', '\nnative - Русский язык', '\nelmath - Математика начальная школа', '\nmidmath - Математика основная школа','\nhighmath - Математика старшая школа', '\neng - Английский язык', '\nuchi - Учи.ру/Олимпиады'];
+const help = ['env - Окружающий мир', '\nnative - Русский язык', '\nelmath - Математика начальная школа', '\nmidmath - Математика основная школа','\nhighmath - Математика старшая школа', '\neng - Английский язык', '\nuchi - Учи.ру/Олимпиады'];
 const channel = 'support';
 
 require('http').createServer().listen(process.env.PORT || 5000).on('request', function(req, res){
     res.end('')
 });
-
+let reqTimer = setTimeout(function wakeUp() {
+    request("https://nameless-gorge-19527.herokuapp.com", function() {
+       console.log("WAKE UP DYNO");
+    });
+    return reqTimer = setTimeout(wakeUp, 1200000);
+ }, 1200000);
 // const express = require('express');
 // const path = require('path');
 // const PORT = process.env.PORT || 5000;
@@ -45,7 +50,7 @@ let bot = new SlackBot({
      
     // all ingoing events https://api.slack.com/rtm
     var temptext = data.text ? data.text.toLowerCase() :'';
-    if(temptext.includes('envi') && temptext.indexOf('[qa]')==0){
+    if(temptext.includes('env') && temptext.indexOf('[qa]')==0){
         console.log(data);
         bot.postMessageToChannel(channel, `${[...enviroment]}`,{
             thread_ts: data.ts,
