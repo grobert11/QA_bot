@@ -34,10 +34,10 @@ let reqTimer = setTimeout(function wakeUp() {
 
 // create a bot on  //banana
 let bot = new SlackBot({
-    token:'xoxb-429903089909-434388194016-jnwIBKRv7QfkYL4SGHdwNjgH'
+    token: 'xoxb-2187949909-443799451110-ikGUDzj1GtvA1U37VO91JENx'
 });
     //token: 'xoxb-2187949909-443799451110-ikGUDzj1GtvA1U37VO91JENx', //uchi.ru
-
+    // token:'xoxb-429903089909-434388194016-jnwIBKRv7QfkYL4SGHdwNjgH' banana
 
 // bot.on('start', function() {
 //     // more information about additional params https://api.slack.com/methods/chat.postMessage
